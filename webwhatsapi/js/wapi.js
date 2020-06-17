@@ -113,7 +113,7 @@ window.WAPI._serializeChatObj = (obj) => {
         contact      : obj['contact'] ? window.WAPI._serializeContactObj(obj['contact'])        : null,
         groupMetadata: obj["groupMetadata"] ? window.WAPI._serializeRawObj(obj["groupMetadata"]): null,
         presence     : obj["presence"] ? window.WAPI._serializeRawObj(obj["presence"])          : null,
-        msgs         : null
+        msgs         : obj['msgs'] ? window.WAPI._serializeContactObj(obj['msgs'])        : null,
     });
 };
 
