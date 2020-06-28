@@ -21,7 +21,7 @@ def webdriver_mgmt(func):
     return wrapper_webdriver_mgmt
 
 
-def is_wa_loggedin()
+def is_wa_loggedin():
 	#get_status
 	return false
 
